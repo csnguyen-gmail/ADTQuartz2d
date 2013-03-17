@@ -40,55 +40,24 @@
                                                     options: ( NSTrackingMouseMoved | NSTrackingActiveInKeyWindow )
                                                       owner:self userInfo:nil];
         [self addTrackingArea:trackingArea];
-        // re-create layers
-        if (backgroundLayer != NULL) {
-            CGLayerRelease(backgroundLayer);
-        }
-        backgroundLayer = CGLayerCreateWithContext(mainContext, dirtyRect.size, NULL);
-        if (foregroundLayer != NULL) {
-            CGLayerRelease(foregroundLayer);
-        }
-        foregroundLayer = CGLayerCreateWithContext(mainContext, dirtyRect.size, NULL);
-        // re-draw layers
-        [self drawBackground];
-        [self drawForeground];
     }
     // draw to main context
-    CGContextDrawLayerAtPoint (mainContext, CGPointZero, backgroundLayer);
-    CGContextDrawLayerAtPoint (mainContext, CGPointZero, foregroundLayer);
-}
-- (void)drawForeground{
-    CGContextRef context = CGLayerGetContext(foregroundLayer);
-    if (context == NULL) {
-        return;
-    }
-    // draw foreground
-    CGContextClearRect(context, trackingArea.rect);
-    CGContextSetRGBFillColor (context, 0, 0, 1, 1);
-    CGContextFillRect (context, NSMakeRect(currentPoint.x - HALF_WIDTH, currentPoint.y - HALF_WIDTH, HALF_WIDTH * 2, HALF_WIDTH * 2));
-}
-- (void)drawBackground{
-    HARD_WORK
-    CGContextRef context = CGLayerGetContext(backgroundLayer);
-    if (context == NULL) {
-        return;
-    }
     // draw background
+    HARD_WORK
     CGFloat red =  (CGFloat)random()/(CGFloat)RAND_MAX;
     CGFloat blue = (CGFloat)random()/(CGFloat)RAND_MAX;
     CGFloat green = (CGFloat)random()/(CGFloat)RAND_MAX;
     CGColorRef backgroundColor = CGColorCreateGenericRGB(red, green, blue, 1);
-    CGContextSetFillColorWithColor(context, backgroundColor);
+    CGContextSetFillColorWithColor(mainContext, backgroundColor);
     CGColorRelease(backgroundColor);
-    CGContextFillRect (context, trackingArea.rect);
+    CGContextFillRect (mainContext, trackingArea.rect);
+    // draw foreground
+    CGContextSetRGBFillColor (mainContext, 0, 0, 1, 1);
+    CGContextFillRect (mainContext, NSMakeRect(currentPoint.x - HALF_WIDTH, currentPoint.y - HALF_WIDTH, HALF_WIDTH * 2, HALF_WIDTH * 2));
 }
-
 #pragma - Event hadling
 - (void)mouseMoved:(NSEvent *)theEvent {
-    NSPoint point = [self convertPoint:[theEvent locationInWindow] fromView:nil];
-    
-    currentPoint = point;
-    [self drawForeground];
+    currentPoint = [self convertPoint:[theEvent locationInWindow] fromView:nil];
     [self setNeedsDisplay:YES];
     
 }

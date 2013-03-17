@@ -9,7 +9,4 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ADTCustomView : NSView
-- (void)drawForeground;
-- (void)drawBackground;
-
 @end
