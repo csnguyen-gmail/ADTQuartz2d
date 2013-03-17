@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FE5CA5716F54C940052DA01 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE5CA5616F54C940052DA01 /* Cocoa.framework */; };
+		6FE5CA6116F54C940052DA01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FE5CA5F16F54C940052DA01 /* InfoPlist.strings */; };
+		6FE5CA6316F54C940052DA01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5CA6216F54C940052DA01 /* main.m */; };
+		6FE5CA6716F54C940052DA01 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6FE5CA6516F54C940052DA01 /* Credits.rtf */; };
+		6FE5CA6A16F54C940052DA01 /* ADTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5CA6916F54C940052DA01 /* ADTAppDelegate.m */; };
+		6FE5CA6D16F54C940052DA01 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FE5CA6B16F54C940052DA01 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6FE5CA5316F54C940052DA01 /* ADTQuartz2d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADTQuartz2d.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE5CA5616F54C940052DA01 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6FE5CA5916F54C940052DA01 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6FE5CA5A16F54C940052DA01 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6FE5CA5B16F54C940052DA01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6FE5CA5E16F54C940052DA01 /* ADTQuartz2d-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ADTQuartz2d-Info.plist"; sourceTree = "<group>"; };
+		6FE5CA6016F54C940052DA01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6FE5CA6216F54C940052DA01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6FE5CA6416F54C940052DA01 /* ADTQuartz2d-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADTQuartz2d-Prefix.pch"; sourceTree = "<group>"; };
+		6FE5CA6616F54C940052DA01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		6FE5CA6816F54C940052DA01 /* ADTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADTAppDelegate.h; sourceTree = "<group>"; };
+		6FE5CA6916F54C940052DA01 /* ADTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADTAppDelegate.m; sourceTree = "<group>"; };
+		6FE5CA6C16F54C940052DA01 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FE5CA5016F54C940052DA01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE5CA5716F54C940052DA01 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FE5CA4A16F54C940052DA01 = {
+			isa = PBXGroup;
+			children = (
+				6FE5CA5C16F54C940052DA01 /* ADTQuartz2d */,
+				6FE5CA5516F54C940052DA01 /* Frameworks */,
+				6FE5CA5416F54C940052DA01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6FE5CA5416F54C940052DA01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5CA5316F54C940052DA01 /* ADTQuartz2d.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FE5CA5516F54C940052DA01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5CA5616F54C940052DA01 /* Cocoa.framework */,
+				6FE5CA5816F54C940052DA01 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FE5CA5816F54C940052DA01 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5CA5916F54C940052DA01 /* AppKit.framework */,
+				6FE5CA5A16F54C940052DA01 /* CoreData.framework */,
+				6FE5CA5B16F54C940052DA01 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6FE5CA5C16F54C940052DA01 /* ADTQuartz2d */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5CA6816F54C940052DA01 /* ADTAppDelegate.h */,
+				6FE5CA6916F54C940052DA01 /* ADTAppDelegate.m */,
+				6FE5CA6B16F54C940052DA01 /* MainMenu.xib */,
+				6FE5CA5D16F54C940052DA01 /* Supporting Files */,
+			);
+			path = ADTQuartz2d;
+			sourceTree = "<group>";
+		};
+		6FE5CA5D16F54C940052DA01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5CA5E16F54C940052DA01 /* ADTQuartz2d-Info.plist */,
+				6FE5CA5F16F54C940052DA01 /* InfoPlist.strings */,
+				6FE5CA6216F54C940052DA01 /* main.m */,
+				6FE5CA6416F54C940052DA01 /* ADTQuartz2d-Prefix.pch */,
+				6FE5CA6516F54C940052DA01 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FE5CA5216F54C940052DA01 /* ADTQuartz2d */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FE5CA7016F54C940052DA01 /* Build configuration list for PBXNativeTarget "ADTQuartz2d" */;
+			buildPhases = (
+				6FE5CA4F16F54C940052DA01 /* Sources */,
+				6FE5CA5016F54C940052DA01 /* Frameworks */,
+				6FE5CA5116F54C940052DA01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADTQuartz2d;
+			productName = ADTQuartz2d;
+			productReference = 6FE5CA5316F54C940052DA01 /* ADTQuartz2d.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FE5CA4B16F54C940052DA01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ADT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = csnguyen;
+			};
+			buildConfigurationList = 6FE5CA4E16F54C940052DA01 /* Build configuration list for PBXProject "ADTQuartz2d" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6FE5CA4A16F54C940052DA01;
+			productRefGroup = 6FE5CA5416F54C940052DA01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FE5CA5216F54C940052DA01 /* ADTQuartz2d */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FE5CA5116F54C940052DA01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE5CA6116F54C940052DA01 /* InfoPlist.strings in Resources */,
+				6FE5CA6716F54C940052DA01 /* Credits.rtf in Resources */,
+				6FE5CA6D16F54C940052DA01 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FE5CA4F16F54C940052DA01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE5CA6316F54C940052DA01 /* main.m in Sources */,
+				6FE5CA6A16F54C940052DA01 /* ADTAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6FE5CA5F16F54C940052DA01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FE5CA6016F54C940052DA01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6FE5CA6516F54C940052DA01 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FE5CA6616F54C940052DA01 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		6FE5CA6B16F54C940052DA01 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FE5CA6C16F54C940052DA01 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FE5CA6E16F54C940052DA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6FE5CA6F16F54C940052DA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6FE5CA7116F54C940052DA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADTQuartz2d/ADTQuartz2d-Prefix.pch";
+				INFOPLIST_FILE = "ADTQuartz2d/ADTQuartz2d-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6FE5CA7216F54C940052DA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADTQuartz2d/ADTQuartz2d-Prefix.pch";
+				INFOPLIST_FILE = "ADTQuartz2d/ADTQuartz2d-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FE5CA4E16F54C940052DA01 /* Build configuration list for PBXProject "ADTQuartz2d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE5CA6E16F54C940052DA01 /* Debug */,
+				6FE5CA6F16F54C940052DA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FE5CA7016F54C940052DA01 /* Build configuration list for PBXNativeTarget "ADTQuartz2d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE5CA7116F54C940052DA01 /* Debug */,
+				6FE5CA7216F54C940052DA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FE5CA4B16F54C940052DA01 /* Project object */;
+}
