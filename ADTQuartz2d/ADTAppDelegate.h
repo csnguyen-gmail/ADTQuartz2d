@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ADTCustomView.h"
 
 @interface ADTAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (weak) IBOutlet ADTCustomView *customView;
+- (IBAction)sliderMoved:(id)sender;
 @end

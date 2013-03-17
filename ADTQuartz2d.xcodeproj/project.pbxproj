@@ -13,6 +13,7 @@
 		6FE5CA6716F54C940052DA01 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6FE5CA6516F54C940052DA01 /* Credits.rtf */; };
 		6FE5CA6A16F54C940052DA01 /* ADTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5CA6916F54C940052DA01 /* ADTAppDelegate.m */; };
 		6FE5CA6D16F54C940052DA01 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FE5CA6B16F54C940052DA01 /* MainMenu.xib */; };
+		6FE5CA7516F54CEF0052DA01 /* ADTCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5CA7416F54CEF0052DA01 /* ADTCustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		6FE5CA6816F54C940052DA01 /* ADTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADTAppDelegate.h; sourceTree = "<group>"; };
 		6FE5CA6916F54C940052DA01 /* ADTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADTAppDelegate.m; sourceTree = "<group>"; };
 		6FE5CA6C16F54C940052DA01 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6FE5CA7316F54CEF0052DA01 /* ADTCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTCustomView.h; sourceTree = "<group>"; };
+		6FE5CA7416F54CEF0052DA01 /* ADTCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTCustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 			children = (
 				6FE5CA6816F54C940052DA01 /* ADTAppDelegate.h */,
 				6FE5CA6916F54C940052DA01 /* ADTAppDelegate.m */,
+				6FE5CA7316F54CEF0052DA01 /* ADTCustomView.h */,
+				6FE5CA7416F54CEF0052DA01 /* ADTCustomView.m */,
 				6FE5CA6B16F54C940052DA01 /* MainMenu.xib */,
 				6FE5CA5D16F54C940052DA01 /* Supporting Files */,
 			);
@@ -169,6 +174,7 @@
 			files = (
 				6FE5CA6316F54C940052DA01 /* main.m in Sources */,
 				6FE5CA6A16F54C940052DA01 /* ADTAppDelegate.m in Sources */,
+				6FE5CA7516F54CEF0052DA01 /* ADTCustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
